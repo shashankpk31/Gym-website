@@ -1,0 +1,450 @@
+/*  import google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+#Homesec {
+  padding: 100px 0;
+  background-size: cover;
+  height: calc(100vh - 80px);
+}
+
+nav {
+  background: #222831;
+  height: 80px;
+  width: 100%;
+}
+
+label.logo {
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+  position: absolute;
+}
+.logo-right {
+  color: orangered;
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+  z-index: 3;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,
+a:hover {
+  background: orangered;
+  transition: 0.5s;
+}
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+
+.Home {
+  text-align: center;
+  position: absolute;
+  width: 80%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#myVideo {
+  object-fit: cover;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: -1;
+  opacity: 70%;
+}
+#parah1 {
+  font-size: 1.5rem;
+  color: black;
+  font-weight: 500;
+}
+#parah2 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: beige;
+  font-weight: 900;
+}
+.button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: orangered;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button3 {
+  background-color: orangered;
+  color: black;
+  border: 2px solid #f44336;
+  border-radius: 1rem;
+  margin-top: 4%;
+}
+
+.button3:hover {
+  background-color: white;
+  color: orangered;
+}
+
+#Aboutid {
+  background-color: #f1f1f1;
+  padding: 2%;
+}
+
+/* Title fo this section About*/
+
+.title {
+  position: relative;
+  text-align: center;
+  font-size: 148%;
+  font-weight: 900;
+  margin-bottom: 2rem;
+}
+
+.title .title-left {
+  color: #222831;
+}
+
+.title .title-left em {
+  color: orangered;
+}
+
+.title .title-para {
+  font-size: 3vh;
+  font-weight: 100;
+  color: grey;
+}
+
+.facility-half {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1%;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.facility-head {
+  display: flex;
+  justify-content: space-between;
+  width: 45%;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.facility {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid ghostwhite;
+  border-radius: 3%;
+  align-content: stretch;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: nowrap;
+  box-shadow: 3px 5px 3px #808080;
+}
+
+.facility-logo img {
+  height: 100%;
+}
+
+.facility-content {
+  padding-left: 2%;
+}
+.facility-title {
+  color: #222831;
+}
+.facility-main {
+  color: grey;
+}
+
+/*Section services*/
+/* General Motivation*/
+#Services {
+  background-image: url(./asset/seconpicfit.jpg);
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+}
+
+#Services .serv-cont {
+  padding: 5% 1% 5% 1%;
+  color: aliceblue;
+}
+
+#Services .serv-cont h2 {
+  font-size: xx-large;
+  color: aliceblue;
+}
+
+#Classes {
+  background-color: #f1f1f1;
+  display: flex;
+  padding: 1%;
+}
+
+/* #Classes .container {
+} */
+
+#Classes .container .Class-main {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.class-left {
+  padding: 0 1% 0 4%;
+}
+
+.listofclass {
+  display: flex;
+  justify-items: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 80%;
+  flex-wrap: wrap;
+}
+
+.listofclass .classli {
+  border: 2px solid ghostwhite;
+  border-radius: 3%;
+  width: 87%;
+  color: orangered;
+  height: 15%;
+  display: flex;
+  padding: 1%;
+  margin: 4% 1% 1% 1%;
+  justify-content: space-between;
+  align-content: center;
+  align-items: stretch;
+  box-shadow: 3px 5px 3px #808080;
+}
+
+.view {
+  color: orangered;
+}
+
+.class-right {
+  padding: 0 1% 0 4%;
+}
+.clasess-img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  object-position: bottom;
+  border-radius: 2%;
+}
+
+#schedules {
+  background-color: #222831;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./asset/thirdepicfit.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+}
+
+#schedules .container .title .title-left {
+  color: #fff;
+}
+
+.schedule-filter {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+}
+
+.tableofschedule {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+}
+
+.tbodyofschedule {
+  display: grid;
+}
+
+.trofschedule {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.tdofsc{
+  
+}
+
+/* footer section styling */
+footer {
+  background: orangered;
+  padding: 15px 23px;
+  color: #fff;
+  text-align: center;
+}
+footer span a {
+  color: black;
+  text-decoration: none;
+}
+footer span a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  .nav-ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #393e46;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    color: orangered;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+@media (max-width: 858px) {
+  .facility-head {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+  #Classes {
+    background-color: #f1f1f1;
+    display: flex;
+    padding: 1%;
+  }
+
+  #Classes .container .Class-main {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+
+  .class-left {
+    padding: 0 1% 0 4%;
+  }
+
+  .listofclass {
+    display: flex;
+    justify-items: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 80%;
+    flex-wrap: wrap;
+  }
+
+  .listofclass .classli {
+    border: 2px solid ghostwhite;
+    border-radius: 5%;
+    width: 87%;
+    color: orangered;
+    height: 15%;
+    display: flex;
+    padding: 1%;
+    margin: 4% 1% 1% 1%;
+    justify-content: space-between;
+    align-content: center;
+    align-items: stretch;
+  }
+
+  .view {
+    color: orangered;
+  }
+
+  .class-right {
+    padding: 0 1% 0 4%;
+  }
+  .clasess-img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    object-position: bottom;
+    border-radius: 2%;
+  }
+}

@@ -1,0 +1,490 @@
+/*  import google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/*navbar stylying*/
+.navbar {
+  background: #151515;
+  padding: 5px 40px;
+}
+.nav-ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.nav-ul li {
+  padding: 15px 0;
+  cursor: pointer;
+}
+.nav-ul li.items {
+  position: relative;
+  width: auto;
+  margin: 0 16px;
+  text-align: center;
+  order: 3;
+}
+.right-logo {
+  color: orangered;
+}
+.nav-ul li.items:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 5px;
+  height: 2px;
+  width: 100%;
+  background: orangered;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+.nav-ul li.items:hover:after {
+  opacity: 1;
+  bottom: 8px;
+}
+.nav-ul li.logo {
+  flex: 1;
+  color: white;
+  font-size: 23px;
+  font-weight: 600;
+  cursor: default;
+  user-select: none;
+}
+.nav-ul li a {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  transition: 0.4s;
+}
+.nav-ul li:hover a {
+  color: orangered;
+}
+.nav-ul li i {
+  font-size: 23px;
+}
+.nav-ul li.btn {
+  display: none;
+}
+.nav-ul li.btn.hide i:before {
+  content: "\f00d";
+}
+@media all and (max-width: 900px) {
+  .navbar {
+    padding: 5px 30px;
+  }
+  .nav-ul li.items {
+    width: 100%;
+    display: none;
+  }
+  .nav-ul li.items.show {
+    display: block;
+  }
+  .nav-ul li.btn {
+    display: block;
+  }
+  .nav-ul li.items:hover {
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px orangered, inset 0 0 10px rgba(255, 68, 0, 0.849);
+  }
+  .nav-ul li.items:hover:after {
+    opacity: 0;
+  }
+}
+/*Home section*/
+#Home {
+  position: relative;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#myVideo {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.Home-main {
+  /* display: inline; */
+}
+.parah1 {
+  font-size: 1.5rem;
+  color: black;
+  font-weight: 500;
+}
+.parah2 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: beige;
+  font-weight: 900;
+}
+.button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: orangered;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button3 {
+  background-color: orangered;
+  color: black;
+  border: 2px solid #f44336;
+  border-radius: 1rem;
+  margin-top: 4%;
+}
+.button3:hover {
+  background-color: white;
+  color: orangered;
+}
+/*About section*/
+#About {
+  display: flex;
+  width: 100%;
+  background: white;
+  max-width: 100vw;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.title {
+  position: relative;
+  text-align: center;
+  font-size: 148%;
+  font-weight: 900;
+  margin-bottom: 2rem;
+}
+
+.title .title-left {
+  color: #151515;
+}
+
+.title .title-left em {
+  color: orangered;
+}
+
+.title .title-para {
+  font-size: 3vh;
+  font-weight: 100;
+  color: grey;
+}
+
+.facility-half {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1%;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.facility-head {
+  display: flex;
+  justify-content: space-between;
+  width: 45%;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.facility {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid ghostwhite;
+  border-radius: 3%;
+  align-content: stretch;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: nowrap;
+  box-shadow: 3px 5px 3px #808080;
+}
+
+.facility-logo img {
+  height: 100%;
+}
+
+.facility-content {
+  padding-left: 2%;
+}
+.facility-title {
+  color: #222831;
+}
+.facility-main {
+  color: grey;
+}
+
+@media (max-width: 858px) {
+  .facility-head {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 1% 4% 4% 1%;
+  }
+}
+
+/*Services section*/
+
+#Services {
+  display: flex;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./asset/seconpicfit.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+  height: 100vh;
+  color: #f1f1f1;
+  align-items: center;
+}
+
+#Services .title .title-left {
+  color: #f1f1f1;
+}
+
+#Services .title .title-para {
+  color: #f1f1f1;
+}
+
+.card img {
+  width: 40vh;
+  height: auto;
+}
+
+#Services .serv-cont {
+  padding: 5% 1% 5% 1%;
+  color: aliceblue;
+}
+
+#Services .serv-cont h2 {
+  font-size: xx-large;
+  color: aliceblue;
+}
+/* section*/
+#Ourtrainer {
+  display: flex;
+  width: 100%;
+  background: white;
+  max-width: 100vw;
+  overflow: hidden;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#train-head {
+  color: #000;
+  padding: 1%;
+}
+
+#train-head em{
+  color: #f44336;
+}
+
+
+ .carousel .card{
+  background: #000;
+  border-radius: 6px;
+  padding: 25px 35px;
+  text-align: center;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  color: #f1f1f1;
+}
+ .carousel .card:hover{
+  background: orangered;
+}
+ .carousel .card .box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.carousel .card:hover .box{
+  transform: scale(1.05);
+}
+ .carousel .card .text{
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+ .carousel .card img{
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid orangered;
+  transition: all 0.3s ease;
+}
+ .carousel .card:hover img{
+  border-color: #fff;
+}
+.owl-dots{
+  text-align: center;
+  margin-top: 20px;
+}
+.owl-dot{
+  height: 13px;
+  width: 13px;
+  margin: 0 5px;
+  outline: none!important;
+  border-radius: 50%;
+  border: 2px solid orangered!important;
+  transition: all 0.3s ease;
+}
+.owl-dot.active{
+  width: 35px;
+  border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+  background: orangered!important;
+}
+/* section*/
+
+/* #schedules {
+  background-color: #222831;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./asset/thirdepicfit.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+}
+
+#schedules .container .title .title-left {
+  color: #fff;
+}
+
+.schedule-filter {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+}
+
+.tableofschedule {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+}
+
+.tbodyofschedule {
+  display: grid;
+}
+
+.trofschedule {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.tdofsc {
+} */
+
+/*Contact section*/
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: orangered;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8%;
+}
+
+input[type=submit]:hover {
+  background-color: orangered;
+}
+
+/* Style the container/contact section */
+#Contact {
+  border-radius: 5px;
+  background-color:#000;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 100vw;
+  color: #ccc;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/* footer section styling */
+footer {
+  background: orangered;
+  padding: 15px 23px;
+  color: #fff;
+  text-align: center;
+}
+footer span a {
+  color: black;
+  text-decoration: none;
+}
+footer span a:hover {
+  text-decoration: underline;
+}
